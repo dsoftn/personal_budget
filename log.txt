@@ -1,0 +1,49 @@
+************************************************************
+This is 'Personal Budget' log file
+Author: Danijel Nisevic (DsoftN)
+Log is deleted every time you start a new session.
+************************************************************
+Started on Sunday, 12. March 2023.
+************************************************************
+
+15:56 - App started - User login...
+15:57 - Session started. User: mama
+15:57 - Main window started ...
+15:57 - Events report started ... 
+15:57 - Setting. Function report_x update value to Report Window X pos, param: 125  User: mama
+15:57 - Setting. Function report_y update value to Report Window Y pos, param: 125  User: mama
+15:57 - Setting. Function report_w update value to Report Window WIDTH, param: 824  User: mama
+15:57 - Setting. Function report_h update value to Report Window HEIGHT, param: 513  User: mama
+15:57 - Setting. Function report_tree_indent_val update value to Value for tree view indent, param: 30  User: mama
+15:57 - Setting. Function report_tree_indent_max update value to Max value for tree view indent, param: 100  User: mama
+15:57 - Setting. Function report_tree_cmb_tree_show update value to ComboBox, param: 0  User: mama
+15:57 - Setting. Function report_tree_tbl_tree_col_width0 update value to Table column width, param: 150  User: mama
+15:57 - Setting. Function report_tree_tbl_tree_col_width1 update value to Table column width, param: 450  User: mama
+15:57 - Setting. Function report_tree_indent_char update value to ., param: 0  User: mama
+15:57 - Events report finished ... 
+15:57 - Add event started...
+15:57 - Setting. Function add_event_cmb_event_type update value to Dorucak, param: 2  User: mama
+15:57 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: mama
+15:57 - Setting. Function add.event_cmb_partner update value to Salama i slanina, param: 14  User: mama
+15:57 - Setting. Function kurs update value to 0, param: 0  User: mama
+15:57 - Added event to user database. connection.user.add_event
+15:57 - Finished adding data to database. User: mama
+15:58 - Setting. Function main_x update value to Main Window X pos, param: 130  User: mama
+15:58 - Setting. Function main_y update value to Main Window Y pos, param: 23  User: mama
+15:58 - Setting. Function main_w update value to Main Window WIDTH, param: 1146  User: mama
+15:58 - Setting. Function main_h update value to Main Window HEIGHT, param: 697  User: mama
+15:58 - Setting. Function main_full_screen update value to Full Screen, param: 0  User: mama
+15:58 - Setting. Function main_tbl_header_width0 update value to Sirina kolona u tabeli, param: 125  User: mama
+15:58 - Setting. Function main_tbl_header_width1 update value to Sirina kolona u tabeli, param: 39  User: mama
+15:58 - Setting. Function main_tbl_header_width2 update value to Sirina kolona u tabeli, param: 39  User: mama
+15:58 - Setting. Function main_tbl_header_width3 update value to Sirina kolona u tabeli, param: 39  User: mama
+15:58 - Setting. Function main_tbl_header_width4 update value to Sirina kolona u tabeli, param: 39  User: mama
+15:58 - Setting. Function main_tbl_header_width5 update value to Sirina kolona u tabeli, param: 183  User: mama
+15:58 - Setting. Function main_tbl_header_width6 update value to Sirina kolona u tabeli, param: 185  User: mama
+15:58 - Setting. Function main_tbl_header_width7 update value to Sirina kolona u tabeli, param: 336  User: mama
+15:58 - Setting. Function main_tbl_header_width8 update value to Sirina kolona u tabeli, param: 90  User: mama
+15:58 - Setting. Function main_filter_cmb_column update value to Current index, param: 0  User: mama
+15:58 - Setting. Function main_filter_cmb_operand update value to Current index, param: 0  User: mama
+15:58 - ************************************************************
+15:58 - Finished on Sunday, 12. March 2023.
+15:58 - ************************************************************

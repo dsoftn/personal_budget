@@ -1,0 +1,38 @@
+--
+-- Creates database tables
+--
+-- DO NOT CHANGE OR DELETE THIS FILE !!!
+--
+
+-- Table: mesto
+CREATE TABLE mesto (mesto_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, naziv TEXT (255) NOT NULL);
+
+-- Table: uredjaj
+CREATE TABLE uredjaj (uredjaj_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, naziv TEXT (255) NOT NULL, id TEXT (255) NOT NULL, tip TEXT (255) NOT NULL, opis TEXT (255));
+
+-- Table: vrsta
+CREATE TABLE vrsta (vrsta_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, naziv TEXT (100) NOT NULL);
+
+-- Table: wallet
+CREATE TABLE wallet (wallet_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, name TEXT (255) NOT NULL, description TEXT (255) NOT NULL, created_at TEXT (20) NOT NULL);
+
+-- Table: web
+CREATE TABLE web (web_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, naslov TEXT (255), stranica TEXT (255), opis TEXT , username TEXT (100), password TEXT (255), vreme_upisa TEXT (20));
+
+-- Table: trosak
+CREATE TABLE trosak (trosak_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, prihod_rsd NUMERIC (12, 2) NOT NULL DEFAULT (0.0), rashod_rsd NUMERIC (12, 2) NOT NULL DEFAULT (0.0), prihod_eur NUMERIC (12, 2) NOT NULL DEFAULT (0.0), rashod_eur NUMERIC (12, 2) NOT NULL DEFAULT (0.0), datum TEXT (11) NOT NULL, datum_int INTEGER, vreme_upisa TEXT (30) NOT NULL, kurs NUMERIC (12, 2) NOT NULL, opis TEXT (255) NOT NULL, partner TEXT (255) NOT NULL, uredjaj_id INTEGER NOT NULL REFERENCES uredjaj (uredjaj_id), vrsta_id INTEGER NOT NULL REFERENCES vrsta (vrsta_id), mesto_id INTEGER NOT NULL REFERENCES mesto (mesto_id), wallet_id INTEGER NOT NULL);
+
+-- Table: trosak_datum_extra
+CREATE TABLE trosak_datum_extra (datum TEXT (11), dan_naziv TEXT (50), nedelja INTEGER, mesec_naziv TEXT (50), mesec_broj INTEGER, godina INTEGER);
+
+-- Table: filter_data
+CREATE TABLE filter_data (trosak_id INTEGER NOT NULL, prihod_rsd NUMERIC (12, 2) NOT NULL DEFAULT (0.0), rashod_rsd NUMERIC (12, 2) NOT NULL DEFAULT (0.0), prihod_eur NUMERIC (12, 2) NOT NULL DEFAULT (0.0), rashod_eur NUMERIC (12, 2) NOT NULL DEFAULT (0.0), datum TEXT (11) NOT NULL, dan_naziv TEXT (50), nedelja INTEGER, mesec_naziv TEXT (50), mesec_broj INTEGER, godina INTEGER, datum_int INTEGER, vreme_upisa TEXT (30) NOT NULL, kurs NUMERIC (12, 2) NOT NULL, opis TEXT (255) NOT NULL, partner TEXT (255) NOT NULL, uredjaj_id INTEGER NOT NULL REFERENCES uredjaj (uredjaj_id), vrsta_id INTEGER NOT NULL REFERENCES vrsta (vrsta_id), vrsta_naziv TEXT (255), mesto_id INTEGER NOT NULL REFERENCES mesto (mesto_id), mesto_naziv TEXT (255), wallet_id INTEGER NOT NULL, wallet_naziv TEXT (255));
+
+-- Table: filter_id
+CREATE TABLE filter_id (event_id);
+
+-- Table: chart
+CREATE TABLE chart (chart_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, name TEXT (255) NOT NULL, description TEXT (255));
+
+-- Table: chart_data
+CREATE TABLE chart_data (chart_data_id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, chart_id INTEGER REFERENCES chart (chart_id), data TEXT (255) NOT NULL, val_txt TEXT (255), val_int INTEGER, val_real REAL);
