@@ -100,6 +100,7 @@ class StartMainWindow(QtWidgets.QMainWindow):
         wall.setup_gui()
         self.table_populate()
         self.ui.lcd_balance.display(float(self.user_db.get_balance_rsd()))
+        self.update_total()
     
     def mnu_actionWeb_click(self):
         web_add = web_cls.WebAdd(self.active_user_id, self.active_user, self.active_lang)
@@ -219,6 +220,8 @@ class StartMainWindow(QtWidgets.QMainWindow):
                 itm.item(row, 9).setText(str(result[6]))
                 itm.item(row, 10).setText(str(result[0]))
                 self.ui.lcd_balance.display(float(self.user_db.get_balance_rsd()))
+            self.ui.lcd_balance.display(float(self.user_db.get_balance_rsd()))
+            self.update_total()
         
     def tbl_trosak_mnu_delete_triggered(self):
         if self.ui.tbl_trosak.currentRow() >= 0:
