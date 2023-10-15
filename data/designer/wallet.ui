@@ -496,6 +496,26 @@
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_delete">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete Transfer</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>data/assets/main_bank.png</normaloff>data/assets/main_bank.png</iconset>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QFrame" name="frm_details_2">
    <property name="geometry">

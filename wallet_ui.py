@@ -164,6 +164,11 @@ class Ui_Dialog(object):
         self.btn_transfer.setIcon(icon1)
         self.btn_transfer.setAutoDefault(False)
         self.btn_transfer.setObjectName("btn_transfer")
+        self.btn_delete = QtWidgets.QPushButton(self.frm_options)
+        self.btn_delete.setGeometry(QtCore.QRect(360, 40, 131, 28))
+        self.btn_delete.setIcon(icon)
+        self.btn_delete.setAutoDefault(False)
+        self.btn_delete.setObjectName("btn_delete")
         self.frm_details_2 = QtWidgets.QFrame(Dialog)
         self.frm_details_2.setGeometry(QtCore.QRect(250, 410, 791, 40))
         palette = QtGui.QPalette()
@@ -328,3 +333,4 @@ class Ui_Dialog(object):
         self.lbl_wallet_name.setObjectName("lbl_wallet_name")
 
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+

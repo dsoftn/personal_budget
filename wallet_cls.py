@@ -42,6 +42,7 @@ class Wallet(QtWidgets.QDialog):
         self.ui.btn_total.clicked.connect(self.btn_total_click)
         self.ui.tbl_walets.selectionChanged = self.tbl_wallets_selection_changed
         self.ui.btn_transfer.clicked.connect(self.mnu_tbl_wallets_transfer_trigger)
+        self.ui.btn_delete.clicked.connect(self.btn_delete_click)
         # Define context menus
         self.tbl_wallets_context_mnu()
 
@@ -50,7 +51,6 @@ class Wallet(QtWidgets.QDialog):
 
         self.show()
         self.exec_()
-        
 
     def tbl_wallets_context_mnu(self):
         # Create Menu
@@ -154,8 +154,6 @@ class Wallet(QtWidgets.QDialog):
         # Populate wallet details, and wallet events table
         self.update_details()
 
-        
-
     def update_details(self):
         # Clear all data
         self.ui.tbl_events.clear()
@@ -255,6 +253,22 @@ class Wallet(QtWidgets.QDialog):
         add_new.setup_gui()
         self.populate_wallets(self.ui.tbl_walets.currentRow())
 
+    def btn_delete_click(self):
+        if self.ui.tbl_events.currentItem() is None:
+            return
+
+        result = QtWidgets.QMessageBox.question(self, self.conn.lang("wallet_msg_delete_title", self.active_lang), self.conn.lang("wallet_msg_delete_question_text", self.active_lang), QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No | QtWidgets.QMessageBox.Cancel, QtWidgets.QMessageBox.No)
+        if result != QtWidgets.QMessageBox.Yes:
+            return
+
+        event_id = int(self.ui.tbl_events.item(self.ui.tbl_events.currentRow(), 0).text())
+        result = self.wallet_base.delete_transfer_event(event_id)
+        if result:
+            self.ui.tbl_events.setRowHidden(self.ui.tbl_events.currentRow(), True)
+            return
+        
+        QtWidgets.QMessageBox.critical(self, self.conn.lang("wallet_msg_delete_title", self.active_lang), self.conn.lang("wallet_msg_delete_text", self.active_lang), QtWidgets.QMessageBox.Ok)
+
     def mousePressEvent(self, a0: QtGui.QMouseEvent) -> None:
         x = a0.localPos().x()
         drag_point = self.ui.lin_delimiter.pos().x()
@@ -325,7 +339,7 @@ class Wallet(QtWidgets.QDialog):
         h = self.height()
         self.ui.lin_delimiter.resize(1, h-60)
         if self.drag_mode:
-            self.ui.lin_delimiter.move(x, 60)
+            self.ui.lin_delimiter.move(int(x), 60)
         dx = self.ui.lin_delimiter.pos().x()
         self.ui.lbl_caption.resize(w, self.ui.lbl_caption.height())
         self.ui.tbl_walets.resize(dx, h-60)
@@ -338,7 +352,6 @@ class Wallet(QtWidgets.QDialog):
         self.ui.frm_details_2.resize(w-dx, self.ui.frm_details_2.height())
         self.ui.frm_details_2.move(dx, h-40)
 
-
     def retranslateUi(self):
         self.setWindowTitle(self.conn.lang("wallet_win_title", self.active_lang))
         self.ui.lbl_caption.setText(self.conn.lang("wallet_lbl_caption", self.active_lang))
@@ -346,6 +359,7 @@ class Wallet(QtWidgets.QDialog):
         self.ui.lbl_total_income.setText(self.conn.lang("wallet_lbl_total_income", self.active_lang))
         self.ui.lbl_total_outcome.setText(self.conn.lang("wallet_lbl_total_outcome", self.active_lang))
         self.ui.btn_transfer.setText(self.conn.lang("wallet_btn_transfer", self.active_lang))
+        self.ui.btn_delete.setText(self.conn.lang("wallet_btn_delete", self.active_lang))
 
 
 class WalletAdd(QtWidgets.QDialog):
@@ -428,11 +442,11 @@ class WalletAdd(QtWidgets.QDialog):
         h = self.height()
         scale = h / 330
         self.ui.lbl_caption.resize(w, self.ui.lbl_caption.height())
-        self.ui.lbl_name.move(self.ui.lbl_name.pos().x(), 60*scale)
-        self.ui.lbl_description.move(self.ui.lbl_description.pos().x(), 140*scale)
-        self.ui.txt_name.move(self.ui.txt_name.pos().x(), 90*scale)
+        self.ui.lbl_name.move(self.ui.lbl_name.pos().x(), int(60*scale))
+        self.ui.lbl_description.move(self.ui.lbl_description.pos().x(), int(140*scale))
+        self.ui.txt_name.move(self.ui.txt_name.pos().x(), int(90*scale))
         self.ui.txt_name.resize(w-40, self.ui.txt_name.height())
-        self.ui.txt_description.move(self.ui.txt_description.pos().x(), 170*scale)
+        self.ui.txt_description.move(self.ui.txt_description.pos().x(), int(170*scale))
         self.ui.txt_description.resize(w-40, self.ui.txt_description.height())
         self.ui.line.move(self.ui.line.pos().x(), h-50)
         self.ui.line.resize(w-40, self.ui.line.height())
@@ -557,7 +571,6 @@ class WalletTransfer(QtWidgets.QDialog):
         self.ui.frm_transfer.setVisible(True)
         txt = self.conn.lang("wallet_transfer_frm_caption2", self.active_lang)
         self.ui.lbl_frm_caption.setText(txt)
-
 
     def btn_from_main_click(self):
         self.from_wall = "main"

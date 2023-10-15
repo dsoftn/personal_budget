@@ -1293,15 +1293,44 @@ class User:
         else:
             return False
 
-    def delete_event(self, event_id):
+    def delete_event(self, event_id) -> bool:
         result = self.get_data_trosak_for_main_win(trosak_id=event_id)
         if len(result) == 0:
             self.log.write_log(f"Error. Unable to delete event. Event does not exist. Event_ID = {event_id}")
-            return
+            return False
         q = f"DELETE FROM trosak WHERE trosak_id = {event_id} ;"
         self.cur.execute(q)
         self.conn.commit()
-        return
+        return True
+
+    def delete_transfer_event(self, event_id: int) -> bool:
+
+        q = f"SELECT * FROM trosak WHERE trosak_id = {event_id} ;"
+        self.cur.execute(q)
+        record = self.cur.fetchall()
+        if not record:
+            return False
+
+        try:
+            event_id_2 = int(record[0][10])
+        except ValueError:
+            return False
+
+        q = f"SELECT * FROM trosak WHERE trosak_id = {event_id_2} ;"
+        self.cur.execute(q)
+        record = self.cur.fetchall()
+        if not record:
+            return False
+
+        q = f"DELETE FROM trosak WHERE trosak_id = {event_id} ;"
+        self.cur.execute(q)
+        self.conn.commit()
+
+        q = f"DELETE FROM trosak WHERE trosak_id = {event_id_2} ;"
+        self.cur.execute(q)
+        self.conn.commit()
+
+        return True
 
     def get_device_all(self, device_id=0):
         q = "SELECT * FROM uredjaj "
@@ -1511,6 +1540,14 @@ class Wallets():
         self.cur.execute(q)
         self.conn.commit()
         self.log.write_log("Wallet deleted.")
+
+    def delete_transfer_event(self, event_id: int) -> bool:
+        if not event_id:
+            return False
+
+        result = self.user.delete_transfer_event(event_id)
+        
+        return result
 
     def is_safe_to_delete_wallet(self, wallet_id):
         ev = self.get_events(wallet_id)
@@ -1928,12 +1965,4 @@ class Chart():
         self.cur.execute(q)
         result = self.cur.fetchall()
         return result
-
-
-
-# a = ConnStart()
-# a.proba()
-
-# a=  User(12)
-# a.get_balance_rsd(1)
 
