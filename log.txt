@@ -3,76 +3,43 @@ This is 'Personal Budget' log file
 Author: Danijel Nisevic (DsoftN)
 Log is deleted every time you start a new session.
 ************************************************************
-Started on Sunday, 15. October 2023.
+Started on Wednesday, 04. September 2024.
 ************************************************************
 
-20:53 - App started - User login...
-20:53 - Session started. User: mama
-20:53 - Main window started ...
-20:53 - Add event started...
-21:01 - Setting. Function add_event_cmb_event_type update value to Rucak, param: 1  User: mama
-21:01 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: mama
-21:01 - Setting. Function add.event_cmb_partner update value to Slanina, param: 210  User: mama
-21:01 - Setting. Function kurs update value to 0, param: 0  User: mama
-21:01 - Added event to user database. connection.user.add_event
-21:01 - Added event to user database. connection.user.add_event
-21:01 - Added event to user database. connection.user.add_event
-21:01 - Finished adding data to database. User: mama
-21:01 - View event started.
-21:02 - View event finished.
-21:02 - Edit event started.
-21:02 - Updated event in user database. connection.user.set_event
-21:02 - Event updated. Event ID: 966  User: mama
-21:02 - Edit event finished.
-21:02 - Edit event started.
-21:02 - Updated event in user database. connection.user.set_event
-21:02 - Event updated. Event ID: 967  User: mama
-21:02 - Edit event finished.
-21:02 - Add event started...
-21:05 - Setting. Function add_event_cmb_event_type update value to Rucak, param: 1  User: mama
-21:05 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: mama
-21:05 - Setting. Function add.event_cmb_partner update value to Peceno meso, param: 210  User: mama
-21:05 - Setting. Function kurs update value to 0, param: 0  User: mama
-21:05 - Added event to user database. connection.user.add_event
-21:05 - Finished adding data to database. User: mama
-21:05 - Add event started...
-21:05 - Setting. Function add_event_cmb_event_type update value to Rucak, param: 1  User: mama
-21:05 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: mama
-21:05 - Setting. Function add.event_cmb_partner update value to Paradajz corba, param: 115  User: mama
-21:05 - Setting. Function kurs update value to 0, param: 0  User: mama
-21:05 - Added event to user database. connection.user.add_event
-21:05 - Finished adding data to database. User: mama
-21:06 - Add event started...
-21:08 - Setting. Function add_event_cmb_event_type update value to Rucak, param: 1  User: mama
-21:08 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: mama
-21:08 - Setting. Function add.event_cmb_partner update value to Punjene paprike, param: 188  User: mama
-21:08 - Setting. Function kurs update value to 0, param: 0  User: mama
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Added event to user database. connection.user.add_event
-21:08 - Finished adding data to database. User: mama
-21:09 - Setting. Function main_x update value to Main Window X pos, param: 267  User: mama
-21:09 - Setting. Function main_y update value to Main Window Y pos, param: 166  User: mama
-21:09 - Setting. Function main_w update value to Main Window WIDTH, param: 1224  User: mama
-21:09 - Setting. Function main_h update value to Main Window HEIGHT, param: 697  User: mama
-21:09 - Setting. Function main_full_screen update value to Full Screen, param: 0  User: mama
-21:09 - Setting. Function main_tbl_header_width0 update value to Sirina kolona u tabeli, param: 125  User: mama
-21:09 - Setting. Function main_tbl_header_width1 update value to Sirina kolona u tabeli, param: 85  User: mama
-21:09 - Setting. Function main_tbl_header_width2 update value to Sirina kolona u tabeli, param: 99  User: mama
-21:09 - Setting. Function main_tbl_header_width3 update value to Sirina kolona u tabeli, param: 96  User: mama
-21:09 - Setting. Function main_tbl_header_width4 update value to Sirina kolona u tabeli, param: 82  User: mama
-21:09 - Setting. Function main_tbl_header_width5 update value to Sirina kolona u tabeli, param: 183  User: mama
-21:09 - Setting. Function main_tbl_header_width6 update value to Sirina kolona u tabeli, param: 185  User: mama
-21:09 - Setting. Function main_tbl_header_width7 update value to Sirina kolona u tabeli, param: 336  User: mama
-21:09 - Setting. Function main_tbl_header_width8 update value to Sirina kolona u tabeli, param: 178  User: mama
-21:09 - Setting. Function main_filter_cmb_column update value to Current index, param: 0  User: mama
-21:09 - Setting. Function main_filter_cmb_operand update value to Current index, param: 3  User: mama
-21:09 - ************************************************************
-21:09 - Finished on Sunday, 15. October 2023.
-21:09 - ************************************************************
+12:29 - App started - User login...
+12:29 - Session started. User: mama
+12:29 - Main window started ...
+12:29 - Add event started...
+12:35 - Setting. Function add_event_cmb_event_type update value to Lekovi, param: 10  User: mama
+12:35 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: mama
+12:35 - Setting. Function add.event_cmb_partner update value to Apoteka Privatna, param: 4  User: mama
+12:35 - Setting. Function kurs update value to 0, param: 0  User: mama
+12:35 - Added event to user database. connection.user.add_event
+12:35 - Added event to user database. connection.user.add_event
+12:35 - Added event to user database. connection.user.add_event
+12:35 - Added event to user database. connection.user.add_event
+12:35 - Added event to user database. connection.user.add_event
+12:35 - Finished adding data to database. User: mama
+12:38 - Edit event started.
+12:39 - Updated event in user database. connection.user.set_event
+12:39 - Event updated. Event ID: 2059  User: mama
+12:39 - Edit event finished.
+12:39 - Setting. Function main_x update value to Main Window X pos, param: 387  User: mama
+12:39 - Setting. Function main_y update value to Main Window Y pos, param: 101  User: mama
+12:39 - Setting. Function main_w update value to Main Window WIDTH, param: 1327  User: mama
+12:39 - Setting. Function main_h update value to Main Window HEIGHT, param: 797  User: mama
+12:39 - Setting. Function main_full_screen update value to Full Screen, param: 0  User: mama
+12:39 - Setting. Function main_tbl_header_width0 update value to Sirina kolona u tabeli, param: 125  User: mama
+12:39 - Setting. Function main_tbl_header_width1 update value to Sirina kolona u tabeli, param: 85  User: mama
+12:39 - Setting. Function main_tbl_header_width2 update value to Sirina kolona u tabeli, param: 99  User: mama
+12:39 - Setting. Function main_tbl_header_width3 update value to Sirina kolona u tabeli, param: 96  User: mama
+12:39 - Setting. Function main_tbl_header_width4 update value to Sirina kolona u tabeli, param: 82  User: mama
+12:39 - Setting. Function main_tbl_header_width5 update value to Sirina kolona u tabeli, param: 183  User: mama
+12:39 - Setting. Function main_tbl_header_width6 update value to Sirina kolona u tabeli, param: 185  User: mama
+12:39 - Setting. Function main_tbl_header_width7 update value to Sirina kolona u tabeli, param: 336  User: mama
+12:39 - Setting. Function main_tbl_header_width8 update value to Sirina kolona u tabeli, param: 178  User: mama
+12:39 - Setting. Function main_filter_cmb_column update value to Current index, param: 7  User: mama
+12:39 - Setting. Function main_filter_cmb_operand update value to Current index, param: 2  User: mama
+12:39 - ************************************************************
+12:39 - Finished on Wednesday, 04. September 2024.
+12:39 - ************************************************************
