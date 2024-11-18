@@ -399,10 +399,11 @@ class ConnStart:
     def _add_path(self, file_name):
         # Returns the absolute path to working directory and adds file_name.
         a = os.path.abspath(os.getcwd())
-        c = r" \ "
-        c = c.strip()
-        a = a + c + file_name
-        return a
+        # c = r" \ "
+        # c = c.strip()
+        result = os.path.join(a, file_name)
+        # a = a + c + file_name
+        return result
 
     def get_user_database_name(self, user_id):
         query = f"SELECT baza.name, baza.path FROM baza, user WHERE user.baza_id = baza.baza_id AND user.user_id = {str(user_id)};"

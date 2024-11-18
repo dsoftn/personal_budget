@@ -21,3 +21,6 @@ The graphical user interface provides an easy and intuitive way to use the appli
 ## Languages
 
 The currently supported languages ​​are English and Serbian, with the possibility of other languages ​​being easily implemented in the application.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
