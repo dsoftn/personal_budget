@@ -3,93 +3,35 @@ This is 'Personal Budget' log file
 Author: Danijel Nisevic (DsoftN)
 Log is deleted every time you start a new session.
 ************************************************************
-Started on Saturday, 07. December 2024.
+Started on Wednesday, 11. December 2024.
 ************************************************************
 
-20:34 - App started - User login...
-20:34 - Session started. User: DsoftN
-20:34 - Main window started ...
-20:34 - Add event started...
-20:36 - Setting. Function add_event_cmb_event_type update value to Duvan, param: 10  User: DsoftN
-20:36 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: DsoftN
-20:36 - Setting. Function add.event_cmb_partner update value to Pin, preko puta taksista, param: 100  User: DsoftN
-20:36 - Setting. Function kurs update value to 116, param: 0  User: DsoftN
-20:36 - Added event to user database. connection.user.add_event
-20:36 - Added event to user database. connection.user.add_event
-20:36 - Added event to user database. connection.user.add_event
-20:36 - Added event to user database. connection.user.add_event
-20:36 - Finished adding data to database. User: DsoftN
-20:36 - Edit event started.
-20:36 - Updated event in user database. connection.user.set_event
-20:36 - Event updated. Event ID: 4261  User: DsoftN
-20:36 - Edit event finished.
-20:36 - Edit event started.
-20:36 - Updated event in user database. connection.user.set_event
-20:36 - Event updated. Event ID: 4262  User: DsoftN
-20:36 - Edit event finished.
-20:36 - Edit event started.
-20:36 - Updated event in user database. connection.user.set_event
-20:36 - Event updated. Event ID: 4263  User: DsoftN
-20:36 - Edit event finished.
-20:42 - Add event started...
-20:43 - Setting. Function add_event_cmb_event_type update value to Kladionica, param: 11  User: DsoftN
-20:43 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: DsoftN
-20:43 - Setting. Function add.event_cmb_partner update value to Merkur, Veliki Pionir, param: 76  User: DsoftN
-20:43 - Setting. Function kurs update value to 116, param: 0  User: DsoftN
-20:43 - Added event to user database. connection.user.add_event
-20:43 - Finished adding data to database. User: DsoftN
-20:50 - Add event started...
-20:50 - Setting. Function add_event_cmb_event_type update value to Kladionica, param: 11  User: DsoftN
-20:50 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: DsoftN
-20:50 - Setting. Function add.event_cmb_partner update value to Merkur, Veliki Pionir, param: 76  User: DsoftN
-20:50 - Setting. Function kurs update value to 116, param: 0  User: DsoftN
-20:50 - Added event to user database. connection.user.add_event
-20:50 - Finished adding data to database. User: DsoftN
-20:50 - Edit event started.
-20:50 - Updated event in user database. connection.user.set_event
-20:50 - Event updated. Event ID: 4265  User: DsoftN
-20:50 - Edit event finished.
-20:50 - Edit event started.
-20:50 - Updated event in user database. connection.user.set_event
-20:50 - Event updated. Event ID: 4264  User: DsoftN
-20:50 - Edit event finished.
-20:52 - Wallet view started...
-20:58 - Wallet add started...
-20:58 - Wallet added.
-20:58 - Wallet add finished.
-20:58 - Setting. Function wallet_add_win_x update value to Wallet add, Win Geometry, param: 100  User: DsoftN
-20:58 - Setting. Function wallet_add_win_y update value to Wallet add, Win Geometry, param: 100  User: DsoftN
-20:58 - Setting. Function wallet_add_win_w update value to Wallet add, Win Geometry, param: 559  User: DsoftN
-20:58 - Setting. Function wallet_add_win_h update value to Wallet add, Win Geometry, param: 330  User: DsoftN
-20:59 - Added event to user database. connection.user.add_event
-20:59 - Added event to user database. connection.user.add_event
-20:59 - Transfer from main wallet completed.
-20:59 - Added event to user database. connection.user.add_event
-20:59 - Added event to user database. connection.user.add_event
-20:59 - Transfer from main wallet completed.
-20:59 - Wallet view finished.
-20:59 - Setting. Function wallet_win_x update value to Wallet Win Geometry, param: 332  User: DsoftN
-20:59 - Setting. Function wallet_win_y update value to Wallet Win Geometry, param: 140  User: DsoftN
-20:59 - Setting. Function wallet_win_w update value to Wallet Win Geometry, param: 1040  User: DsoftN
-20:59 - Setting. Function wallet_win_h update value to Wallet Win Geometry, param: 453  User: DsoftN
-20:59 - Setting. Function wallet_btn_total_state update value to Ukupno RSD, param: 0  User: DsoftN
-20:59 - Setting. Function wallet_delimiter_pos_x update value to Delimiter, param: 312  User: DsoftN
-21:00 - Setting. Function main_x update value to Main Window X pos, param: 231  User: DsoftN
-21:00 - Setting. Function main_y update value to Main Window Y pos, param: 108  User: DsoftN
-21:00 - Setting. Function main_w update value to Main Window WIDTH, param: 1436  User: DsoftN
-21:00 - Setting. Function main_h update value to Main Window HEIGHT, param: 675  User: DsoftN
-21:00 - Setting. Function main_full_screen update value to Full Screen, param: 0  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width0 update value to Sirina kolona u tabeli, param: 88  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width1 update value to Sirina kolona u tabeli, param: 100  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width2 update value to Sirina kolona u tabeli, param: 103  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width3 update value to Sirina kolona u tabeli, param: 93  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width4 update value to Sirina kolona u tabeli, param: 102  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width5 update value to Sirina kolona u tabeli, param: 125  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width6 update value to Sirina kolona u tabeli, param: 529  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width7 update value to Sirina kolona u tabeli, param: 125  User: DsoftN
-21:00 - Setting. Function main_tbl_header_width8 update value to Sirina kolona u tabeli, param: 224  User: DsoftN
-21:00 - Setting. Function main_filter_cmb_column update value to Current index, param: 9  User: DsoftN
-21:00 - Setting. Function main_filter_cmb_operand update value to Current index, param: 2  User: DsoftN
-21:00 - ************************************************************
-21:00 - Finished on Saturday, 07. December 2024.
-21:00 - ************************************************************
+14:53 - App started - User login...
+14:54 - Session started. User: DsoftN
+14:54 - Main window started ...
+14:54 - Add event started...
+14:55 - Setting. Function add_event_cmb_event_type update value to Kladionica, param: 11  User: DsoftN
+14:55 - Setting. Function add_event_cmb_places update value to Putinci, param: 1  User: DsoftN
+14:55 - Setting. Function add.event_cmb_partner update value to Admiral Bet, param: 0  User: DsoftN
+14:55 - Setting. Function kurs update value to 116, param: 0  User: DsoftN
+14:55 - Added event to user database. connection.user.add_event
+14:55 - Finished adding data to database. User: DsoftN
+14:55 - Setting. Function main_x update value to Main Window X pos, param: 137  User: DsoftN
+14:55 - Setting. Function main_y update value to Main Window Y pos, param: 29  User: DsoftN
+14:55 - Setting. Function main_w update value to Main Window WIDTH, param: 1508  User: DsoftN
+14:55 - Setting. Function main_h update value to Main Window HEIGHT, param: 836  User: DsoftN
+14:55 - Setting. Function main_full_screen update value to Full Screen, param: 0  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width0 update value to Sirina kolona u tabeli, param: 88  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width1 update value to Sirina kolona u tabeli, param: 100  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width2 update value to Sirina kolona u tabeli, param: 103  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width3 update value to Sirina kolona u tabeli, param: 93  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width4 update value to Sirina kolona u tabeli, param: 102  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width5 update value to Sirina kolona u tabeli, param: 125  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width6 update value to Sirina kolona u tabeli, param: 529  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width7 update value to Sirina kolona u tabeli, param: 125  User: DsoftN
+14:55 - Setting. Function main_tbl_header_width8 update value to Sirina kolona u tabeli, param: 224  User: DsoftN
+14:55 - Setting. Function main_filter_cmb_column update value to Current index, param: 9  User: DsoftN
+14:55 - Setting. Function main_filter_cmb_operand update value to Current index, param: 2  User: DsoftN
+14:55 - ************************************************************
+14:55 - Finished on Wednesday, 11. December 2024.
+14:55 - ************************************************************
